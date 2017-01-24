@@ -1,16 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Component } from 'react'
+import Greet from './src/components/Greet.js'
 
-export default class Greet extends Component {
+export default class App extends Component {
   render(){
     return(
-      <div>Welcome to Start A Party</div>
+      <div>
+        <Greet/>
+      </div>
     )
   }
 }
 
 ReactDOM.render(
-  <Greet />,
+  <App />,
   document.getElementById("root")
 )
